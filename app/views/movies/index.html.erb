@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Movies </title>
+    </head>
+    
+    <body>
+
+        <h1> Movies </h1>
+        <table>
+            <thead>
+           
+
+
+
+                <tr>
+                    <th> code </th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                <% @movies.each do |movie| %>
+
+                    <tr>
+                        <td> <%= movie.id %>   </td>
+                        <td> <%= movie.title %>   </td>
+                    </tr>
+                <% end %>
+            
+
+
+
+            </tbody>
+        </table> 
+
+
+
+    
+       <!-- Conteúdo -->
+    </body>
+
+</html>
